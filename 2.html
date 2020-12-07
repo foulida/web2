@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <title>web1 - html</title>
+    <meta charset="utf-8">
+</head>
+<style>
+
+a{color : black;
+  text-decoration: none;
+}
+h1{font-size: 120px; text-align: center;
+border-bottom: 1px solid gray;
+margin:0;
+padding:20px
+}
+ol{
+  border-right: 1px solid gray;
+  width:100px;
+  margin:0;
+  padding : 20px;
+}
+#grid ol{
+    padding-left: 35px;
+}
+#article{
+  padding:20px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+@media(max-width:750px){
+  #grid{display:block;}
+  ol{
+    border-right:none;
+
+  }
+  h1{
+    border-bottom:none;
+  }
+}
+
+body{margin: 0;}
+</style>
+
+<body>
+
+
+  <h1><a href="index.html">web</a></h1>
+  
+
+  <div id="grid">
+
+  <ol>
+    <li><a href="1.html"> HTML</a></li>
+    <li><a href="2.html"> CSS</a></li>
+    <li><a href="3.html"> JAVASCRIPT</a></li>
+  </ol>
+
+  <div id="article">
+    <p>이거지</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uh2BHM2sz2s" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+</body>
+</html>
